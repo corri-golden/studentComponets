@@ -1,5 +1,7 @@
 console.log("Dale boludo! Dale! Dale!!")
 
+// instructions
+
 const students = [
     {
         name: "Chris Miller",

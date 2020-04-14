@@ -100,18 +100,24 @@ for (const student of students) {
     {
         studentComponent = "failing"
     } 
-    // save results of createStudentComponent function for each student into studentcontainer
-    let studentHTML = createStudentComponent (student.name, student.subject, student.info)
-    // console.log each student container
-    console.log(studentHTML)
-
-    // 
-
-    // Then store a reference to an existing HTML element
     const studentContainer = document.querySelector("#container")
+    studentContainer.innerHTML += createStudentComponent(
+                student.name,
+                student.subject,
+                student.info
+            ) 
+    // // save results of createStudentComponent function for each student into studentcontainer
+    // let studentHTML = createStudentComponent (student.name, student.subject, student.info)
+    // // console.log each student container
+    // console.log(studentHTML)
 
-    // Update its contents with the return value of the function
-    studentContainer.innerHTML += studentHTML
+    // // 
+
+    // // Then store a reference to an existing HTML element
+    // const studentContainer = document.querySelector("#container")
+
+    // // Update its contents with the return value of the function
+    // studentContainer.innerHTML += studentHTML
 
 }
 
